@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #01D758;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Pedido">
+   <children>
+      <Label layoutX="176.0" layoutY="105.0" text="Codigo Pedido">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <DatePicker fx:id="fechaCreacion" layoutX="396.0" layoutY="208.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="176.0" layoutY="260.0" prefHeight="27.0" prefWidth="119.0" text="Fecha Entrega">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <DatePicker fx:id="fechaEntrega" layoutX="396.0" layoutY="261.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="176.0" layoutY="207.0" prefHeight="27.0" prefWidth="119.0" text="Fecha Pedido">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="176.0" layoutY="145.0" prefHeight="27.0" prefWidth="119.0" text="ID Cliente">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="textCodigoPedido" layoutX="396.0" layoutY="93.0" />
+      <TextField fx:id="textIdCliente" layoutX="396.0" layoutY="146.0" />
+      <Button fx:id="crearPedidoBtn" layoutX="260.0" layoutY="335.0" mnemonicParsing="false" onAction="#crearPedido" prefHeight="51.0" prefWidth="181.0" text="Creación">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="156.0" layoutY="23.0" prefHeight="32.0" prefWidth="389.0" text="Creación de pedido">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
